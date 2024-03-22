@@ -2,7 +2,8 @@ import {
     restaurantSchema,
     restaurantRegisterBodySchema,
     restaurantLoginBodySchema,
-    returnRestaurantSchema
+    restaurantReturnSchema,
+    restaurantUpdateBodySchema
 } from "./restaurant.schema";
 import { recipeSchema } from "./recipe.schema";
 import { categorySchema } from "./category.schema";
@@ -13,5 +14,6 @@ export {
     categorySchema,
     restaurantRegisterBodySchema,
     restaurantLoginBodySchema,
-    returnRestaurantSchema
+    restaurantReturnSchema,
+    restaurantUpdateBodySchema
 };

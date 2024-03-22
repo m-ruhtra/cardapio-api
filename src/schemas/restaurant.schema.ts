@@ -12,4 +12,6 @@ export const restaurantRegisterBodySchema = restaurantSchema.omit({ id: true, de
 
 export const restaurantLoginBodySchema = restaurantSchema.pick({ email: true, password: true });
 
-export const returnRestaurantSchema = restaurantSchema.omit({ password: true });
+export const restaurantUpdateBodySchema = restaurantSchema.pick({ description: true });
+
+export const restaurantReturnSchema = restaurantSchema.omit({ password: true });
