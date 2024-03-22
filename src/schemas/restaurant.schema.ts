@@ -8,3 +8,8 @@ export const restaurantSchema = z.object({
     password: z.string().min(3)
 });
 
+export const restaurantRegisterBodySchema = restaurantSchema.omit({ id: true, description: true });
+
+export const restaurantLoginBodySchema = restaurantSchema.pick({ email: true, password: true });
+
+export const returnRestaurantSchema = restaurantSchema.omit({ password: true });

@@ -1,4 +1,7 @@
 import "express-async-errors";
+import "reflect-metadata";
+import "dotenv";
+
 import cors from "cors";
 import express, { json } from "express";
 import helmet from "helmet";
